@@ -13,7 +13,7 @@
 #define BAUD_RATE         9600                // Change baudrate to your need
 
 #define TEMP_SENSOR_ID    "xxx"    // Should look like "5dc1564130xxxxxxxxxxxxxx"
-#define EVENT_WAIT_TIME   30000               // send event every 10 seconds
+#define EVENT_WAIT_TIME   60000               // send event every 60 seconds
 
 #define ONE_WIRE_BUS 17
 
