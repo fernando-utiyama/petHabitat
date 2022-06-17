@@ -154,9 +154,9 @@ void handleTemperaturesensor() {
   bool success = mySensor.sendTemperatureEvent(temperature, humidity); // send event
 
   if (success) {  // if event was sent successfuly, print temperature and humidity to serial
-    Serial.printf("Enviou temperatura: %2.1f Celsius", temperature);
+    Serial.printf("Enviou temperatura: %2.1f Celsius/n", temperature);
   } else {  // if sending event failed, print error message
-    Serial.printf("temperatura: %2.1f Celsius", temperature, "/n");
+    Serial.printf("temperatura: %2.1f Celsius/n", temperature");
     Serial.printf("Something went wrong...could not send Event to server!\r\n");
   }
 
