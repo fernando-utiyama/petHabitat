@@ -43,8 +43,6 @@ bool onPowerState(const String &deviceId, bool &state) {
   Serial.println(state);
   if (deviceId == SWITCH_ID && state){
       myStepper.step(stepsPerRevolution);
-      delay(5);
-      myStepper.step(stepsPerRevolution);
       Serial.println("Alimentando");
       return true;
   }
